@@ -1,0 +1,271 @@
+/* General Reset */
+* {
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+}
+
+/* Navbar Styles */
+.navbar.navbar-expand-md {
+  padding: 0.2rem 0.5rem 0.2rem 0;
+  box-shadow: 0 0 0.2rem black;
+}
+
+.navbar.navbar-expand-md:hover {
+  box-shadow: 0 0 0.4rem black;
+}
+
+.collapse.navbar-collapse {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  height: 5rem;
+}
+
+.navbar-brand img {
+  height: 4.5rem;
+  width: 4.5rem;
+}
+
+.navbar-brand .webtech {
+  font-size: 1.6rem;
+  font-weight: 650;
+}
+
+.navbar-brand .web {
+  color: rgb(251, 15, 15);
+}
+
+.navbar-brand .tech {
+  color: #1d6faa;
+}
+
+.navbar-brand .developers {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  margin-top: -6px;
+}
+
+.navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 2rem;
+}
+
+.navbar-nav .badge {
+  text-align: center;
+  align-content: center;
+  width: 6rem;
+  height: 2.3rem;
+  display: inline-block;
+  width: auto;
+  padding: 0 1.5rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  border-radius: 1rem;
+}
+
+.nav-link .badge:hover {
+  box-shadow: 2px 2px 6px black;
+}
+
+/* image section */
+
+/* Style for the whole carousel */
+#imageCarousel {
+  width: 100%;
+}
+
+/* Style for the images inside the carousel */
+#imageCarousel .carousel-item img {
+  border-radius: 1rem;
+}
+
+#imageCarousel .carousel-indicators button {
+  border-radius: 100%;
+}
+#imageCarousel .carousel-control-prev-icon {
+  opacity: 0.2;
+}
+#imageCarousel .carousel-control-prev-icon:hover {
+  opacity: 1;
+}
+
+#imageCarousel .carousel-control-next-icon {
+  opacity: 0.2;
+}
+#imageCarousel .carousel-control-next-icon:hover {
+  opacity: 1;
+}
+/* four divs */
+.section-h {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.section-p {
+  display: flex;
+  text-align: justify;
+  margin: 1.25rem;
+  font-size: 1.25rem;
+}
+
+video.control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 1.5rem;
+  transition-duration: 1s;
+}
+
+.card {
+  box-shadow: 0 0.1rem 0.35rem black;
+}
+.card:hover {
+  box-shadow: 0 0.45rem 0.8rem black;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.card-body.align-items-center {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+@media (width <= 768px) {
+  .card-body.align-items-center {
+    flex-wrap: wrap;
+  }
+}
+.col-md-6 image {
+  height: 50%;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Remove padding */
+  margin-top: 0;
+  width: 100%;
+  height: 25rem;
+}
+
+.section-img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: rgb(121, 131, 139);
+  padding: 20px;
+}
+
+.footer-row {
+  display: contents;
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location h5 {
+  color: white;
+}
+
+.location h5 a {
+  color: rgb(34, 34, 254);
+}
+
+.grid-col.location h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.footer-row p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+p .p-1 {
+  margin-top: 2rem;
+  font-weight: 800;
+}
+
+.grid-col.col-icon-2 {
+  display: flex;
+  justify-content: center;
+}
+.icon-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon-social a {
+  all: unset;
+}
+
+.icon-social i {
+  margin: 0 10px;
+  font-size: 1.75rem;
+  opacity: 0.6;
+}
+
+.icon-social i:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .footer-row {
+    display: block;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+
